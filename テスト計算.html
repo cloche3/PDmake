@@ -2,6 +2,7 @@
 <head>
 <title>TAG index Webサイト</title>
  <link rel="stylesheet" href="css/zikokuhyou.css">
+    
 <script type="text/javascript">
 <!--
 
@@ -27,7 +28,72 @@ function keisan(){
 	document.form1.field_total.value = total; // 合計を表示
 
 }
+function keisan2(){
 
+	// 設定開始
+
+	// 商品1
+	var price1 = document.form2.goods1.options[document.form2.goods1.selectedIndex].value;
+
+	// 商品2
+	var price2 = document.form2.goods2.options[document.form2.goods2.selectedIndex].value;
+
+	
+
+	// 合計を計算
+	var total = parseInt(price1) - parseInt(price2);
+    var total = total * 1
+    var total = Math.abs(total)
+	// 設定終了
+
+
+	document.form2.field_total.value = total; // 合計を表示
+
+}
+function keisan3(){
+
+	// 設定開始
+
+	// 商品1
+	var price1 = document.form3.goods1.options[document.form3.goods1.selectedIndex].value;
+
+	// 商品2
+	var price2 = document.form3.goods2.options[document.form3.goods2.selectedIndex].value;
+
+	
+
+	// 合計を計算
+	var total = parseInt(price1) - parseInt(price2);
+    var total = total * 1
+    var total = Math.abs(total)
+	// 設定終了
+
+
+	document.form3.field_total.value = total; // 合計を表示
+
+}    
+function keisan4(){
+
+	// 設定開始
+
+	// 商品1
+	var price1 = document.form4.goods1.options[document.form4.goods1.selectedIndex].value;
+
+	// 商品2
+	var price2 = document.form4.goods2.options[document.form4.goods2.selectedIndex].value;
+
+	
+
+	// 合計を計算
+	var total = parseInt(price1) - parseInt(price2);
+    var total = total * 1
+    var total = Math.abs(total)
+	// 設定終了
+
+
+	document.form4.field_total.value = total; // 合計を表示
+
+}
 // --> 
 </script> 
 
@@ -56,31 +122,92 @@ function keisan(){
 
 <table>
 <tr>
-<th>商品名</th>
-<th>タイプ</th>
+<th></th>
+<th>停留所</th>
 </tr>
 <tr>
-<td>商品サンプル1</td>
-<td><select name="goods1" onChange="keisan()">
-<option value="0">タイプを選択してください</option>
-<option value="1">タイプ1（500円）</option>
-<option value="2">タイプ2（1,000円）</option>
-<option value="3">タイプ3（1,500円）</option>
+<td>乗車地点</td>
+<td><select name="goods1" onChange="keisan()" >
+<option value="0">停留所を選択してください</option>
+<option value="1">フォルテ</option>
+<option value="2">本町４丁目</option>
+<option value="3">喜多念館</option>
+<option value="4">中央公民館</option>
+<option value="5">東野々市</option>
+<option value="6">本町１丁目</option>
+<option value="7">若葉台</option>
+<option value="8">押野</option>
+<option value="9">押野駅口</option>
+<option value="10">押野保育園</option>
+<option value="11">本押野</option>
+<option value="12">押野２丁目</option>
+<option value="13">布引中学校</option>
+<option value="14">押越</option>
+<option value="15">押越西</option>
+<option value="16">野代東</option>
+<option value="17">二日市</option>
+<option value="18">野々市駅南口前</option>  
+<option value="19">野々市駅北口前</option>
+<option value="20">長池</option>
+<option value="21">御経塚西</option>
+<option value="22">あやめ</option>
+<option value="23">あやめ北</option>
+<option value="23">御経塚中央</option>
+<option value="25">御経塚史跡公園</option>
+<option value="26">野々市駅北口</option>
+<option value="27">野々市駅南口</option>
+<option value="28">あすなろ団地口</option>
+<option value="29">野代</option>
+<option value="30">御国小学校</option>
+<option value="31">稲荷</option>
+<option value="32">つばき公園</option>
+<option value="33">本町６丁目</option>
 </select></td>
 </tr>
 <tr>
-<td>商品サンプル2</td>
+<td>降車地点</td>
 <td><select name="goods2" onChange="keisan()">
-<option >タイプを選択してください</option>
-<option value="1">タイプ1（500円）</option>
-<option value="2">タイプ2（1,000円）</option>
-<option value="3">タイプ3（1,500円）</option>
+<option value="0">停留所を選択してください</option>
+<option value="1">フォルテ</option>
+<option value="2">本町４丁目</option>
+<option value="3">喜多念館</option>
+<option value="4">中央公民館</option>
+<option value="5">東野々市</option>
+<option value="6">本町１丁目</option>
+<option value="7">若葉台</option>
+<option value="8">押野</option>
+<option value="9">押野駅口</option>
+<option value="10">押野保育園</option>
+<option value="11">本押野</option>
+<option value="12">押野２丁目</option>
+<option value="13">布引中学校</option>
+<option value="14">押越</option>
+<option value="15">押越西</option>
+<option value="16">野代東</option>
+<option value="17">二日市</option>
+<option value="18">野々市駅南口前</option>  
+<option value="19">野々市駅北口前</option>
+<option value="20">長池</option>
+<option value="21">御経塚西</option>
+<option value="22">あやめ</option>
+<option value="23">あやめ北</option>
+<option value="23">御経塚中央</option>
+<option value="25">御経塚史跡公園</option>
+<option value="26">野々市駅北口</option>
+<option value="27">野々市駅南口</option>
+<option value="28">あすなろ団地口</option>
+<option value="29">野代</option>
+<option value="30">御国小学校</option>
+<option value="31">稲荷</option>
+<option value="32">つばき公園</option>
+<option value="33">本町６丁目</option>
+
 </select></td>
 </tr>
 
 <tr>
-<td align="right"><strong>合計</strong></td>
-<td><input type="text" name="field_total" size="8" value="0"> 円</td>
+<td align="right"><strong>約</strong></td>
+<td><input type="text" name="field_total" size="8" value="0"> 分</td>
 </tr>
 </table>
 
@@ -89,6 +216,7 @@ function keisan(){
                 </div>
                 <!-- 内部2 -->
                 <div id="panel2" class="tab_panel">
+                      <form action="#" name="form2">
                   <table>
 <tr>
 <th>商品名</th>
@@ -96,20 +224,79 @@ function keisan(){
 </tr>
 <tr>
 <td>商品サンプル1</td>
-<td><select name="goods1" onChange="keisan()">
-<option value="0">タイプを選択してください</option>
-<option value="1">タイプ1（500円）</option>
-<option value="2">タイプ2（1,000円）</option>
-<option value="3">タイプ3（1,500円）</option>
+<td><select name="goods1" onChange="keisan2()">
+<option value="0">停留所を選択してください</option>
+<option value="1">フォルテ</option>
+<option value="2">太平寺</option>
+<option value="3">カレード</option>
+<option value="4">太平寺西</option>
+<option value="5">堀内東</option>
+<option value="6">堀内公民館</option>
+<option value="7">郷公民館</option>
+<option value="8">蓮花手寺</option>
+<option value="9">明倫高校</option>
+<option value="10">下林郵便局</option>
+<option value="11">位川</option>
+<option value="12">野々市市役所</option>
+<option value="13">布引中学校</option>
+<option value="14">三納</option>
+<option value="15">老人福祉センター</option>
+<option value="16">矢作</option>
+<option value="17">管原団地</option>
+<option value="18">管原小学校</option>  
+<option value="19">管原</option>
+<option value="20">住吉</option>
+<option value="21">住吉公園</option>
+<option value="22">扇が丘</option>
+<option value="23">扇が丘東</option>
+<option value="23">工業大学東</option>
+<option value="25">金沢工業大学</option>
+<option value="26">高橋</option>
+<option value="27">工大前駅</option>
+<option value="28">カミーノ</option>
+<option value="29">喜多記念館</option>
+<option value="30">本町４丁目</option>
+<option value="31">若松</option>
+
+
 </select></td>
 </tr>
 <tr>
 <td>商品サンプル2</td>
-<td><select name="goods2" onChange="keisan()">
+<td><select name="goods2" onChange="keisan2()">
 <option >タイプを選択してください</option>
-<option value="1">タイプ1（500円）</option>
-<option value="2">タイプ2（1,000円）</option>
-<option value="3">タイプ3（1,500円）</option>
+<option value="1">フォルテ</option>
+<option value="2">太平寺</option>
+<option value="3">カレード</option>
+<option value="4">太平寺西</option>
+<option value="5">堀内東</option>
+<option value="6">堀内公民館</option>
+<option value="7">郷公民館</option>
+<option value="8">蓮花手寺</option>
+<option value="9">明倫高校</option>
+<option value="10">下林郵便局</option>
+<option value="11">位川</option>
+<option value="12">野々市市役所</option>
+<option value="13">布引中学校</option>
+<option value="14">三納</option>
+<option value="15">老人福祉センター</option>
+<option value="16">矢作</option>
+<option value="17">管原団地</option>
+<option value="18">管原小学校</option>  
+<option value="19">管原</option>
+<option value="20">住吉</option>
+<option value="21">住吉公園</option>
+<option value="22">扇が丘</option>
+<option value="23">扇が丘東</option>
+<option value="23">工業大学東</option>
+<option value="25">金沢工業大学</option>
+<option value="26">高橋</option>
+<option value="27">工大前駅</option>
+<option value="28">カミーノ</option>
+<option value="29">喜多記念館</option>
+<option value="30">本町４丁目</option>
+<option value="31">若松</option>
+
 </select></td>
 </tr>
 
@@ -123,6 +310,8 @@ function keisan(){
                 </div>
                 <!-- 内部3 -->
                 <div id="panel3" class="tab_panel">
+                     <form action="#" name="form3">
+                    
                   <table>
 <tr>
 <th>商品名</th>
@@ -130,7 +319,7 @@ function keisan(){
 </tr>
 <tr>
 <td>商品サンプル1</td>
-<td><select name="goods1" onChange="keisan()">
+<td><select name="goods1" onChange="keisan3()">
 <option value="0">タイプを選択してください</option>
 <option value="1">タイプ1（500円）</option>
 <option value="2">タイプ2（1,000円）</option>
@@ -139,7 +328,7 @@ function keisan(){
 </tr>
 <tr>
 <td>商品サンプル2</td>
-<td><select name="goods2" onChange="keisan()">
+<td><select name="goods2" onChange="keisan3()">
 <option >タイプを選択してください</option>
 <option value="1">タイプ1（500円）</option>
 <option value="2">タイプ2（1,000円）</option>
@@ -156,14 +345,17 @@ function keisan(){
 </form>  
                 </div>
                 <div id="panel4" class="tab_panel">
-                    <table>
+        
+                     <form action="#" name="form4">
+                    
+                  <table>
 <tr>
 <th>商品名</th>
 <th>タイプ</th>
 </tr>
 <tr>
 <td>商品サンプル1</td>
-<td><select name="goods1" onChange="keisan()">
+<td><select name="goods1" onChange="keisan4()">
 <option value="0">タイプを選択してください</option>
 <option value="1">タイプ1（500円）</option>
 <option value="2">タイプ2（1,000円）</option>
@@ -172,7 +364,7 @@ function keisan(){
 </tr>
 <tr>
 <td>商品サンプル2</td>
-<td><select name="goods2" onChange="keisan()">
+<td><select name="goods2" onChange="keisan4()">
 <option >タイプを選択してください</option>
 <option value="1">タイプ1（500円）</option>
 <option value="2">タイプ2（1,000円）</option>
@@ -186,7 +378,8 @@ function keisan(){
 </tr>
 </table>
 
-</form>
+</form>  
+
                 </div>
             </div>
         </div>
