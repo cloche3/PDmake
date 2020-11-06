@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="jn" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -8,9 +8,101 @@
     <link rel="stylesheet" href="css/zikokuhyou.css">
     <!-- jsの参照先-->
     <script type = "text/javascript" src="js/Script1.js"></script>
+    <script type="text/javascript">
+<!--
+function keisan(){
+
+	// 設定開始
+
+	// 商品1
+	var price1 = document.form1.goods1.options[document.form1.goods1.selectedIndex].value;
+
+	// 商品2
+	var price2 = document.form1.goods2.options[document.form1.goods2.selectedIndex].value;
+
+	
+
+	// 合計を計算
+	var total = parseInt(price1) - parseInt(price2);
+    var total = total * 1
+    var total = Math.abs(total)
+	// 設定終了
+
+
+	document.form1.field_total.value = total; // 合計を表示
+
+}
+function keisan2(){
+
+	// 設定開始
+
+	// 商品1
+	var price1 = document.form2.goods1.options[document.form2.goods1.selectedIndex].value;
+
+	// 商品2
+	var price2 = document.form2.goods2.options[document.form2.goods2.selectedIndex].value;
+
+	
+
+	// 合計を計算
+	var total = parseInt(price1) - parseInt(price2);
+    var total = total * 1
+    var total = Math.abs(total)
+	// 設定終了
+
+
+	document.form2.field_total.value = total; // 合計を表示
+
+}
+function keisan3(){
+
+	// 設定開始
+
+	// 商品1
+	var price1 = document.form3.goods1.options[document.form3.goods1.selectedIndex].value;
+
+	// 商品2
+	var price2 = document.form3.goods2.options[document.form3.goods2.selectedIndex].value;
+
+	
+
+	// 合計を計算
+	var total = parseInt(price1) - parseInt(price2);
+    var total = total * 1
+    var total = Math.abs(total)
+	// 設定終了
+
+
+	document.form3.field_total.value = total; // 合計を表示
+
+}    
+function keisan4(){
+
+	// 設定開始
+
+	// 商品1
+	var price1 = document.form4.goods1.options[document.form4.goods1.selectedIndex].value;
+
+	// 商品2
+	var price2 = document.form4.goods2.options[document.form4.goods2.selectedIndex].value;
+
+	
+
+	// 合計を計算
+	var total = parseInt(price1) - parseInt(price2);
+    var total = total * 1
+    var total = Math.abs(total)
+	// 設定終了
+
+
+	document.form4.field_total.value = total; // 合計を表示
+
+}
+
+// --> 
+</script> 
 </head>
 <body>
-    <h1>のっティ時刻表</h1>
     <div class="test">
         <div class ="space"></div>
         <!-- 選択タブ-->
@@ -19,12 +111,12 @@
             <input id="tab2" type="radio" name="tab_btn">
             <input id="tab3" type="radio" name="tab_btn">
             <input id="tab4" type="radio" name="tab_btn">
-            <!-- 選択肢(上タブ)-->
+            <!-- 選択肢(上タブ)-->  
             <div class="tab_area">
-                <label class="tab1_label" for="tab1">tab1</label>
-                <label class="tab2_label" for="tab2">tab2</label>
-                <label class="tab3_label" for="tab3">tab3</label>
-                <label class="tab4_label" for="tab4">tab4</label>
+                <label class="tab1_label" for="tab1">北部</label>
+                <label class="tab2_label" for="tab2">中央</label>
+                <label class="tab3_label" for="tab3">南部</label>
+                <label class="tab4_label" for="tab4">西部</label>
             </div>
             <!-- 内部表示 -->
             <div class="panel_area">
@@ -42,11 +134,234 @@
                 </div>
                 <div id="panel4" class="tab_panel">
                     <img src ="image/4.png">
+                    
                 </div>
             </div>
         </div>
+        <div class="nomal_box">　    ここに追跡</div>
+        <div class="nomal_box2">
+            <div class="tabs">
+  <input id="all" type="radio" name="tab_item" checked>
+  <label class="tab_item" for="all">北部</label>
+  <input id="programming" type="radio" name="tab_item">
+  <label class="tab_item" for="programming">中央</label>
+  <input id="design" type="radio" name="tab_item">
+  <label class="tab_item" for="design">南部</label>
+  <input id="desig" type="radio" name="tab_item">
+  <label class="tab_item" for="desig">西部</label>
+  <div class="tab_content" id="all_content">
+    <div class="tab_content_description">
+      <p class="c-txtsp"><form action="#" name="form1">
+
+<table>
+<tr>
+<th></th>
+<th>停留所</th>
+</tr>
+<tr>
+<td>乗車地点</td>
+<td><select name="goods1" onChange="keisan()" >
+<option value="0">停留所を選択してください</option>
+<option value="1">フォルテ</option>
+<option value="2">本町４丁目</option>
+<option value="3">喜多念館</option>
+<option value="4">中央公民館</option>
+<option value="5">東野々市</option>
+<option value="6">本町１丁目</option>
+<option value="7">若葉台</option>
+<option value="8">押野</option>
+<option value="9">押野駅口</option>
+<option value="10">押野保育園</option>
+<option value="11">本押野</option>
+<option value="12">押野２丁目</option>
+<option value="13">布引中学校</option>
+<option value="14">押越</option>
+<option value="15">押越西</option>
+<option value="16">野代東</option>
+<option value="17">二日市</option>
+<option value="18">野々市駅南口前</option>  
+<option value="19">野々市駅北口前</option>
+<option value="20">長池</option>
+<option value="21">御経塚西</option>
+<option value="22">あやめ</option>
+<option value="23">あやめ北</option>
+<option value="23">御経塚中央</option>
+<option value="25">御経塚史跡公園</option>
+<option value="26">野々市駅北口</option>
+<option value="27">野々市駅南口</option>
+<option value="28">あすなろ団地口</option>
+<option value="29">野代</option>
+<option value="30">御国小学校</option>
+<option value="31">稲荷</option>
+<option value="32">つばき公園</option>
+<option value="33">本町６丁目</option>
+</select></td>
+</tr>
+<tr>
+<td>降車地点</td>
+<td><select name="goods2" onChange="keisan()">
+<option value="0">停留所を選択してください</option>
+<option value="1">フォルテ</option>
+<option value="2">本町４丁目</option>
+<option value="3">喜多念館</option>
+<option value="4">中央公民館</option>
+<option value="5">東野々市</option>
+<option value="6">本町１丁目</option>
+<option value="7">若葉台</option>
+<option value="8">押野</option>
+<option value="9">押野駅口</option>
+<option value="10">押野保育園</option>
+<option value="11">本押野</option>
+<option value="12">押野２丁目</option>
+<option value="13">布引中学校</option>
+<option value="14">押越</option>
+<option value="15">押越西</option>
+<option value="16">野代東</option>
+<option value="17">二日市</option>
+<option value="18">野々市駅南口前</option>  
+<option value="19">野々市駅北口前</option>
+<option value="20">長池</option>
+<option value="21">御経塚西</option>
+<option value="22">あやめ</option>
+<option value="23">あやめ北</option>
+<option value="23">御経塚中央</option>
+<option value="25">御経塚史跡公園</option>
+<option value="26">野々市駅北口</option>
+<option value="27">野々市駅南口</option>
+<option value="28">あすなろ団地口</option>
+<option value="29">野代</option>
+<option value="30">御国小学校</option>
+<option value="31">稲荷</option>
+<option value="32">つばき公園</option>
+<option value="33">本町６丁目</option>
+
+</select></td>
+</tr>
+
+<tr>
+<td align="right"><strong>約</strong></td>
+<td><input type="text" name="field_total" size="8" value="0"> 分</td>
+</tr>
+</table>
+
+</form></p>
+    </div>
+  </div>
+  <div class="tab_content" id="programming_content">
+    <div class="tab_content_description">
+      <p class="c-txtsp"> <form action="#" name="form2">
+                  <table>
+<tr>
+<th></th>
+<th>停留所</th>
+</tr>
+<tr>
+<td>乗車地点</td>
+<td><select name="goods1" onChange="keisan2()">
+<option value="0">停留所を選択してください</option>
+<option value="1">フォルテ</option>
+<option value="2">太平寺</option>
+<option value="3">カレード</option>
+<option value="4">太平寺西</option>
+<option value="5">堀内東</option>
+<option value="6">堀内公民館</option>
+<option value="7">郷公民館</option>
+<option value="8">蓮花手寺</option>
+<option value="9">明倫高校</option>
+<option value="10">下林郵便局</option>
+<option value="11">位川</option>
+<option value="12">野々市市役所</option>
+<option value="13">布引中学校</option>
+<option value="14">三納</option>
+<option value="15">老人福祉センター</option>
+<option value="16">矢作</option>
+<option value="17">管原団地</option>
+<option value="18">管原小学校</option>  
+<option value="19">管原</option>
+<option value="20">住吉</option>
+<option value="21">住吉公園</option>
+<option value="22">扇が丘</option>
+<option value="23">扇が丘東</option>
+<option value="23">工業大学東</option>
+<option value="25">金沢工業大学</option>
+<option value="26">高橋</option>
+<option value="27">工大前駅</option>
+<option value="28">カミーノ</option>
+<option value="29">喜多記念館</option>
+<option value="30">本町４丁目</option>
+<option value="31">若松</option>
+
+
+</select></td>
+</tr>
+<tr>
+<td>降車地点</td>
+<td><select name="goods2" onChange="keisan2()">
+<option >停留所を選択してください</option>
+<option value="1">フォルテ</option>
+<option value="2">太平寺</option>
+<option value="3">カレード</option>
+<option value="4">太平寺西</option>
+<option value="5">堀内東</option>
+<option value="6">堀内公民館</option>
+<option value="7">郷公民館</option>
+<option value="8">蓮花手寺</option>
+<option value="9">明倫高校</option>
+<option value="10">下林郵便局</option>
+<option value="11">位川</option>
+<option value="12">野々市市役所</option>
+<option value="13">布引中学校</option>
+<option value="14">三納</option>
+<option value="15">老人福祉センター</option>
+<option value="16">矢作</option>
+<option value="17">管原団地</option>
+<option value="18">管原小学校</option>  
+<option value="19">管原</option>
+<option value="20">住吉</option>
+<option value="21">住吉公園</option>
+<option value="22">扇が丘</option>
+<option value="23">扇が丘東</option>
+<option value="23">工業大学東</option>
+<option value="25">金沢工業大学</option>
+<option value="26">高橋</option>
+<option value="27">工大前駅</option>
+<option value="28">カミーノ</option>
+<option value="29">喜多記念館</option>
+<option value="30">本町４丁目</option>
+<option value="31">若松</option>
+
+</select></td>
+</tr>
+
+<tr>
+<td align="right"><strong>  約</strong></td>
+<td><input type="text" name="field_total" size="8" value="0"> 分</td>
+</tr>
+</table>
+
+</form>
+    </div>
+  </div>
+  <div class="tab_content" id="design_content">
+    <div class="tab_content_description">
+      <p class="c-txtsp">内容がここに入ります</p>
+    </div>
+  </div>
+     <div class="tab_content" id="desig_content">
+    <div class="tab_content_description">
+      <p class="c-txtsp">内容がここに入ります</p>
+    </div>
+  </div>
+    
+</div>
     </div>
 
+        <img src="16215.png" width="50%">
+    <div style="position:absolute; top:1450px; right: 130px"><h3>北部、中央ルート乗り換えおすすめ地点</h3></div>
+     <div style="position:absolute; top:1500px; right: 10px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.897922045533!2d136.60658831502295!3d36.53245698000463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff835bca6f50339%3A0xf519e224907ff33e!2z44OV44Kp44Or44OG!5e0!3m2!1sja!2sjp!4v1602826623976!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
 
-</body>
+    <div style="position:absolute; top:1950px; right: 130px"><h3>中央、西部、南部ルート乗り換えおすすめ地点</h3></div>
+    <div style="position:absolute; top:2000px; right: 10px"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3206.432747491378!2d136.60756001502244!3d36.51955288000734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff835ee704311a1%3A0xe3ffb98cc4b8b3cc!2z6YeO44CF5biC5biC5b255omA!5e0!3m2!1sja!2sjp!4v1602826878309!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+    
+    </body>
 </html>
