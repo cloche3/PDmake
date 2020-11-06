@@ -1,12 +1,22 @@
-﻿body{background-color:aqua}
+﻿body
+{
+  background-color: #E0FFFF;
+}
+.test {
+    height: auto;
+    width: 1600px;
+    margin: auto;
+    background-color: white;
+}
 .space {
-    height: 50px;
+    text-align: center;
+
 }
 @keyframes tabAnim{
 	0%{opacity:0;}
 	100%{opacity:1;}
 }
-.tab_wrap{width:1108px;margin:80px auto;}
+.tab_wrap{width:1120px;margin:20px auto;}
 input[type="radio"]{display:none;}
 .tab_area{font-size:0; margin:0 10px;}
 .tab_area label{width:150px; margin:0 5px; display:inline-block; padding:12px 0; color:#999; background:#ddd; text-align:center; font-size:13px; cursor:pointer; transition:ease 0.2s opacity;}
@@ -78,7 +88,7 @@ input[type="radio"]{display:none;}
     box-shadow: 0 2px 1px rgba(0,0,0,.07);
     background: #fff;
     transition: all .4s ease-in-out;
-    
+
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -190,6 +200,8 @@ input[name="tab_item"] {
     width: 800px;
     height: 300px;
     float: left;
+    background-color: #D3DEF1;
+     text-align:center;
 }
 
 .nomal_box2 {
@@ -217,5 +229,54 @@ tab3:checked ~ .tab-box #tab-content4{
 }
 
 .box {
-    
+  width: 50px;
+  float: left;
+  height: 50px;
+}
+.cb{
+
+  float: left;
+}
+.space2{
+  height: 200px;
+  width: auto;
+}
+.midle{
+height: 360px;
+width: auto;
+border: solid;
+border-radius: 8px;
+border-color: #3399FF;
+
+}
+.map2{
+  left:  10px;
+}
+.map_title{
+  float: left;
+  left:  130px
+
+}
+.space3{
+  height: 50px;
+}
+.map_center{
+   width: auto;
+   height: 1144px;
+   border: solid;
+border-radius: 8px;
+border-color: #3399FF;
+}
+.part{
+      margin: 0px auto 10px;
+    width: 800px;
+    border-bottom: 5px solid #a1a7bb;
+}
+.zikoku{
+  width: 1230px;
+  height: 770px;
+  margin: 10px auto;
+  border: solid;
+border-radius: 8px;
+border-color: #3399FF;
 }
